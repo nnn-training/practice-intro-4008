@@ -17,8 +17,9 @@ movingButton.click(() => {
 
 const loadavg = $('#loadavg');
 
+// ポーリングの間隔を1000ms(1s)に変更
 setInterval(() => {
   $.get('/server-status', {}, (data) => {
     loadavg.text(data.loadavg.toString());
   });
-}, 10);
+}, 1000);
