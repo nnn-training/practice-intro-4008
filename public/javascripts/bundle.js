@@ -10830,7 +10830,7 @@ setInterval(function () {
   }).then(function (data) {
     loadavg.text(data.loadavg.toString());
   });
-}, 10);
+}, 1000);
 })();
 
 /******/ })()
